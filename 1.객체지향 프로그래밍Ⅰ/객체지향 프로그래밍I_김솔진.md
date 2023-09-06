@@ -171,9 +171,14 @@ c.num=5; 		//cv는 객체의 참조변수가 필요 없음=>class명을 호출�
 </aside>
 
 →메소드 = 선언부+구현
-
-//선언부(매개변수의 개수는 0~n개까지) 반환타입(작업결과의 자료형) 메소드 이름(타입 변수명, 타입 변수명, .../*매개변수*/) //구현부 { //메소드 호출시 실행될 코드 } //출력값은 0~1개 밖에 없기 때문에 객체 배열을 활용해준다. //출력값(반환값)이 없을땐 반환타입을 void라고 해주면 된다. 
-
+```
+//선언부(매개변수의 개수는 0 - n개까지) 
+반환타입(작업결과의 자료형) 
+메소드 이름(타입 변수명, 타입 변수명, .../*매개변수*/) 
+//구현부 {
+//메소드 호출시 실행될 코드 } //출력값은 0~1개 밖에 없기 때문에 객체 배열을 활용해준다.
+//출력값(반환값)이 없을땐 반환타입을 void라고 해주면 된다. 
+```
 →메소드의 구현부
 
 <aside> 📝 지역변수(lv): 메소드 내에 선언된 변수.
@@ -247,10 +252,29 @@ System.out.println(a.add()); 		// 참조변수.메소드이름()
 →static 메소드: 인스턴스멤버(iv,im)를 사용하지 않을때 static을 붙임
 
 →참고로 static 변수는 공통변수이기 때문에 객체생성 안하고 아무때나 쓸 수 있다.
-
-class AA{ 	int iv; //인스턴스 변수 	static int cv; // 어디에서나 쓰일 수 있는 클래스변수 	//인스턴스 메소드 	void instanceMethod(){ 		System.out.println(iv); // O 		System.out.println(cv); // O } 	//static 메소드: 객체 생성 없이 호출 가능 	static void instanceMethod(){ 		System.out.println(iv); // X static메소드는 인스턴스 변수 사용불가 		System.out.println(cv); // O 클래스변수는 사용 가능 	} } class AA{ 	void instanceMethod(){} //인스턴스 메소드 	static void staticMethod(){} // static 메소드 	 //인스턴스 메소드 	void instanceMethod2(){ 		instanceMethod(); //O: 다른 인스턴스를 호출 		staticMethod(); //O: static메소드를 호출 	} 	 static void staticMethod2(){ 		instanceMethod(); //X static메소드에서 im을 출력할 수 있다. 		staticMethod(); //O static메소드 안에서도 출력 가능. 	} } 
-
-15강 오버로딩: Overloading((같은 메소드를)과적하다.)
+```
+class AA{
+int iv; //인스턴스 변수
+static int cv; // 어디에서나 쓰일 수 있는 클래스변수
+//인스턴스 메소드
+void instanceMethod(){
+System.out.println(iv); // O
+System.out.println(cv); // O }
+//static 메소드: 객체 생성 없이 호출 가능
+static void instanceMethod(){
+System.out.println(iv); // X static메소드는 인스턴스 변수 사용불가
+System.out.println(cv); // O 클래스변수는 사용 가능 	} }
+class AA{ 	void instanceMethod(){} //인스턴스 메소드
+static void staticMethod(){} // static 메소드
+//인스턴스 메소드
+void instanceMethod2(){
+instanceMethod(); //O: 다른 인스턴스를 호출
+staticMethod(); //O: static메소드를 호출 	}
+static void staticMethod2(){
+instanceMethod(); //X static메소드에서 im을 출력할 수 있다.
+staticMethod(); //O static메소드 안에서도 출력 가능. 	} } 
+```
+### 15강 오버로딩: Overloading((같은 메소드를)과적하다.)
 
 →한 클래스 안에 같은 이름의 메소드를 여러 개 정의 하는 것
 
@@ -264,12 +288,16 @@ class AA{ 	int iv; //인스턴스 변수 	static int cv; // 어디에서나 쓰�
 
 </aside>
 
-16강 생성자(constructor)
+### 16강 생성자(constructor)
 
 →인스턴스가 생성될 때마다 호출되는 ‘인스턴스(iv) 초기화 메소드’
-
-Time t = new Time(); t.hour =12; t.minute = 34; t.second = 56; //위의 복잡함을 아래처럼 간결하게 표현해주기 위해 생성자를 쓴다. Time t = new Time(12,34,56); 
-
+```
+Time t = new Time();
+t.hour =12;
+t.minute = 34;
+t.second = 56; //위의 복잡함을 아래처럼 간결하게 표현해주기 위해 생성자를 쓴다.
+Time t = new Time(12,34,56); 
+```
 <aside> 🐟 규칙
 
 생성자명=클래스명 리턴값X(+void 안붙임) 모든 클래스는 반드시 하나 이상의 생성자를 가짐 
@@ -278,15 +306,26 @@ Time t = new Time(); t.hour =12; t.minute = 34; t.second = 56; //위의 복잡�
 
 기본 생성자 : 매개변수가 없는 생성자 클래스이름(){ } →생성자가 하나도 없을때, 컴파일러가 자동으로 추가해줌 매개변수가 있는 생성자 ⇒ 객체 만들때 꼭 값을 넣어주어야 함. 
 
-17강 생성자 this()
+### 17강 생성자 this()
 
 →생성자에서 다른 생성자 호출할때 사용(코드의 중복을 제거하기 위해서)
 
 →다른 생성자 호출시 첫 줄에서만 사용 가능
-
-class Car{ 	String color; 	String gearType; 	int door; //기본생성자 Car(){ //디폴트값 	color ="Mint"; 	gearType = "Auto"; 	door=4; 	} //다른 생성자1 Car(String a, String b, int c){ 	color =a; 	gearType = b; 	door=c; 	} //다른 생성자2 Car(){ ~~door=5;~~ this(color,"어쩔티비",4); //꼭 얘를 첫줄에 써준다 
-
-17-1강 참조변수 this(≠생성자 this)
+```
+class Car{
+String color;
+String gearType;
+int door; //기본생성자
+Car(){ //디폴트값
+color ="Mint";
+gearType = "Auto";
+door=4; 	} //다른 생성자1
+Car(String a, String b, int c){
+color =a;
+gearType = b;
+door=c; 	} //다른 생성자2
+```
+### 17-1강 참조변수 this(≠생성자 this)
 
 →인스턴스 자신을 가리키는 참조변수. 인스턴스의 주소가 저장되어 있음 →iv의 진짜 이름 this.변수. this.이 생략되어 있었을 뿐
 
@@ -300,5 +339,5 @@ class Car{ 	String color; 	String gearType; 	int door; //기본생성자 Car(){ 
 
 →생성자의 매개변수가 있으면 생략X iv가 아니라 lv가 되어버림
 
-18강 변수의 초기화, 멤버변수의 초기화
+### 18강 변수의 초기화, 멤버변수의 초기화
 
