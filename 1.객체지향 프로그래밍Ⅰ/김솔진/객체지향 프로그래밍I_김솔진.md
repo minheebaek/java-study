@@ -239,9 +239,9 @@ int x, y; 	//인스턴스 메서드, iv 사용
 int add(){ resturn a+b; }	 	//클래스 메소드(static 메소드), lv 변수 	
 static void add(int a, int b){return a+b} 	// 매개변수: lv변수 } 
 ```
-→클래스 메소드: 객체 생성 없이 호출이 가능
+→클래스 메서드: 객체 생성 없이 호출이 가능
 ```
-class AA2{ 	//메인 메소드
+class AA2{ 	//메인 메서드
 public static void main(String[]args){ 		//클래스메소드 호출
 System.out.println(AA.add(200,200); 		//위 클래스의 인스턴스(객체) 생성
 AA a = new AA(); 		//객체를 생성했으니 iv 변수, 값 생성
@@ -251,28 +251,36 @@ System.out.println(a.add()); 		// 참조변수.메소드이름()
 ```
 →static 메소드: 인스턴스멤버(iv,im)를 사용하지 않을때 static을 붙임
 
-→참고로 static 변수는 공통변수이기 때문에 객체생성 안하고 아무때나 쓸 수 있다.
+→static 변수는 공통변수이기 때문에 객체생성 안하고 아무때나 쓸 수 있다.
 ```
 class AA{
-int iv; //인스턴스 변수
-static int cv; // 어디에서나 쓰일 수 있는 클래스변수
-//인스턴스 메소드
-void instanceMethod(){
-System.out.println(iv); // O
-System.out.println(cv); // O }
-//static 메소드: 객체 생성 없이 호출 가능
-static void instanceMethod(){
-System.out.println(iv); // X static메소드는 인스턴스 변수 사용불가
-System.out.println(cv); // O 클래스변수는 사용 가능 	} }
-class AA{ 	void instanceMethod(){} //인스턴스 메소드
-static void staticMethod(){} // static 메소드
-//인스턴스 메소드
-void instanceMethod2(){
-instanceMethod(); //O: 다른 인스턴스를 호출
-staticMethod(); //O: static메소드를 호출 	}
-static void staticMethod2(){
-instanceMethod(); //X static메소드에서 im을 출력할 수 있다.
-staticMethod(); //O static메소드 안에서도 출력 가능. 	} } 
+  int iv; //인스턴스 변수
+  static int cv; // 어디에서나 쓰일 수 있는 클래스변수
+  //
+  //인스턴스 메소드
+  void instanceMethod(){
+    System.out.println(iv); // O
+    System.out.println(cv); // O
+  }
+  //static 메소드: 객체 생성 없이 호출 가능. 객체생성과 상관없이 공유할때 사용
+  static void instanceMethod(){
+    System.out.println(iv); // X static메소드는 인스턴스 변수 사용불가
+    System.out.println(cv); // O 클래스변수는 사용 가능
+  }
+}
+class AA{
+  void instanceMethod(){} //인스턴스 메소드
+  static void staticMethod(){} // static 메소드
+  //인스턴스 메소드
+  void instanceMethod2(){
+    instanceMethod(); //O: 다른 인스턴스를 호출
+    staticMethod(); //O: static메소드를 호출
+  }
+  static void staticMethod2(){
+  instanceMethod(); //X static메소드에서 im을 출력할 수 있다.
+  staticMethod(); //O static메소드 안에서도 출력 가능.
+  }
+} 
 ```
 ### 15강 오버로딩: Overloading((같은 메소드를)과적하다.)
 
