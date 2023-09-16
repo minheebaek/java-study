@@ -1,4 +1,4 @@
-## **[1. 상속(inheritance)](https://codingmoding.tistory.com/129#1.%20%EC%83%81%EC%86%8D(inheritance)-1)**
+## **[1. 상속(inheritance)]**
 
 ### **상속**
 
@@ -50,7 +50,7 @@ class Circle {
 
 : 모든 클래스 Object 클래스에 정의된 11개의 메서드 상속받음
 
-## **[2. 오버라이딩(overriding)](https://codingmoding.tistory.com/129#2.%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9(overriding)-1)**
+## **[2. 오버라이딩(overriding)]**
 
 ### **오버라이딩**
 
@@ -191,7 +191,7 @@ class Child extends Parent {
 > x=20
 > 
 
-## **[3. package와 import](https://codingmoding.tistory.com/129#3.%20package%EC%99%80%C2%A0%20import-1)**
+## **[3. package와 import]**
 
 ### **패키지(package)**
 
@@ -254,7 +254,7 @@ public class PackageTest {
 > ① package문
 > 
 
-## **[4. 제어자(modifiers)](https://codingmoding.tistory.com/129#4.%20%EC%A0%9C%EC%96%B4%EC%9E%90(modifiers)-1)**
+## **[4. 제어자(modifiers)]**
 
 : 클래스, 변수, 메서드의 선언부에 사용되어 부가적인 의미 부여
 
@@ -412,7 +412,7 @@ public class TimeTest {
 | 멤버변수 | 모든 접근 제어자, final, static |
 | 지역변수 | final |
 
-## **[5. 다형성(polymorphism)](https://codingmoding.tistory.com/129#5.%20%EB%8B%A4%ED%98%95%EC%84%B1(polymorphism)-1)**
+## **[5. 다형성(polymorphism)]**
 
 ### **다형성**
 
@@ -680,7 +680,7 @@ class Buyer2 {
 > Tv을/를 구입하셨습니다.
 > 
 
-## **[6. 추상클래스(abstract class)](https://codingmoding.tistory.com/129#6.%20%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4(abstract%20class)-1)**
+## **[6. 추상클래스(abstract class)]**
 
 ### **추상메서드**
 
@@ -722,7 +722,7 @@ class CDPlayer extends Player3 {
 }
 ```
 
-## **[7. 인터페이스(interface)](https://codingmoding.tistory.com/129#7.%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4(interface)-1)**
+## **[7. 인터페이스(interface)]**
 
 ### **인터페이스**
 
@@ -970,7 +970,7 @@ public class DefaultMethodTest {
 }
 ```
 
-## **[8. 내부 클래스(inner class)](https://codingmoding.tistory.com/129#8.%20%EB%82%B4%EB%B6%80%20%ED%81%B4%EB%9E%98%EC%8A%A4(inner%20class)-1)**
+## **[8. 내부 클래스(inner class)]**
 
 ### **내부 클래스**
 
