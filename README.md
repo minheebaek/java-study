@@ -35,7 +35,7 @@ Java Study
 | 2 | 챕터7. 객체지향 프로그래밍Ⅱ | 23-08-18 | 23-08-24 |  :white_check_mark: |     |     |     |  |
 | 2 | 챕터7. 객체지향 프로그래밍Ⅱ | 23-09-10 | 23-09-16 |    |     |  :white_check_mark:   |   :white_check_mark:    | :white_check_mark: |
 | 3 | 챕터8. 예외처리 | 23-09-17 | 23-09-23 |    :white_check_mark:    |     |   :white_check_mark: |   :white_check_mark:  | :white_check_mark: |
-| 4 | 챕터9. java.lang 패키지와 유용한 클래스 | 23-10-01 | 23-10-07 | :white_check_mark:|     |     |     | :white_check_mark: |
+| 4 | 챕터9. java.lang 패키지와 유용한 클래스 | 23-10-01 | 23-10-07 | :white_check_mark:|     |     | :white_check_mark:    | :white_check_mark: |
 | 5 | 챕터10. 날짜와 시간 & 형식화 | 23-10-08 | 23-10-14 |                    |     |     |     |  |
 | 6 | 챕터11. 컬렉션 프레임웍 | 23-10-15 | 23-10-21 |                    |     |     |     |  |
 | 7 | 챕터14. 람다와 스트림 | 23-10-22 | 23-10-28 |                    |     |     |     |  |
