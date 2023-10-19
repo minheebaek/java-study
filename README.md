@@ -28,20 +28,20 @@ Java Study
 * 세부 일정 및 진행 방향은 추후 변경 될 수도 있습니다.
 
 ## :arrow_forward: 스터디 세부 일정
-| 순번 | 목차              | 시작일자     | 종료일자     |         백민희        | 최지인 | 김솔진 | 김미주 | 정유진 |  
-| ------: | :---------------|----------|----------|:------------------:|:---:|:---:|:---:|:-------:|
-| 1 | 챕터6. 객체지향 프로그래밍Ⅰ | 23-08-10 | 23-08-17 |  :white_check_mark: | :white_check_mark: |   |     |  |
-| 1 | 챕터6. 객체지향 프로그래밍Ⅰ | 23-09-04 | 23-09-09 |                    |  | :white_check_mark:    |  :white_check_mark:   | :white_check_mark: |
-| 2 | 챕터7. 객체지향 프로그래밍Ⅱ | 23-08-18 | 23-08-24 |  :white_check_mark: |     |     |     |  |
-| 2 | 챕터7. 객체지향 프로그래밍Ⅱ | 23-09-10 | 23-09-16 |    |     |  :white_check_mark:   |   :white_check_mark:    | :white_check_mark: |
-| 3 | 챕터8. 예외처리 | 23-09-17 | 23-09-23 |    :white_check_mark:    |     |   :white_check_mark: |   :white_check_mark:  | :white_check_mark: |
-| 4 | 챕터9. java.lang 패키지와 유용한 클래스 | 23-10-01 | 23-10-07 | :white_check_mark:|     |  :white_check_mark:   | :white_check_mark:    | :white_check_mark: |
-| 5 | 챕터10. 날짜와 시간 & 형식화 | 23-10-08 | 23-10-14 |                    |     |     |     |  |
-| 6 | 챕터11. 컬렉션 프레임웍 | 23-10-15 | 23-10-21 |                    |     |     |     |  |
-| 7 | 챕터14. 람다와 스트림 | 23-10-22 | 23-10-28 |                    |     |     |     |  |
-
+| 순번 | 목차                          | 시작일자     | 종료일자     |         백민희        | 최지인 | 김솔진 | 김미주 | 정유진 |  
+|---:|:----------------------------|----------|----------|:------------------:|:---:|:---:|:---:|:-------:|
+|  1 | 챕터6. 객체지향 프로그래밍Ⅰ            | 23-08-10 | 23-08-17 |  :white_check_mark: | :white_check_mark: |   |     |  |
+|  1 | 챕터6. 객체지향 프로그래밍Ⅰ            | 23-09-04 | 23-09-09 |                    |  | :white_check_mark:    |  :white_check_mark:   | :white_check_mark: |
+|  2 | 챕터7. 객체지향 프로그래밍Ⅱ            | 23-08-18 | 23-08-24 |  :white_check_mark: |     |     |     |  |
+|  2 | 챕터7. 객체지향 프로그래밍Ⅱ            | 23-09-10 | 23-09-16 |    |     |  :white_check_mark:   |   :white_check_mark:    | :white_check_mark: |
+|  3 | 챕터8. 예외처리                   | 23-09-17 | 23-09-23 |    :white_check_mark:    |     |   :white_check_mark: |   :white_check_mark:  | :white_check_mark: |
+|  4 | 챕터9. java.lang 패키지와 유용한 클래스 | 23-10-01 | 23-10-07 | :white_check_mark:|     |  :white_check_mark:   | :white_check_mark:    | :white_check_mark: |
+|  5 | 챕터10. 날짜와 시간 & 형식화          | 23-10-08 | 23-10-14 |                    |     |     |     |  |
+|  6 | 챕터11. 컬렉션 프레임웍              | 23-10-15 | 23-10-21 |                    |     |     |     |  |
+|  7 | 챕터12. 지네릭스, 열거형, 애너테이션      | 23-10-22 | 23-10-28 |                    |     |     |     |  |
+|  8 | 챕터15. 입출력(자율)               |  |  |                    |     |     |     |  |
 
 ## :arrow_forward: 기타
 + Java의 정석 소스 : https://github.com/castello/javajungsuk3
 + 스터디 진행 방향 참고 깃 : https://github.com/pej4303/java-study
-+ 스터디 진행 방향 참고 블로그 : https://thisisprogrammingworld.tistory.com/2
++ 스터디 진행 방향 참고 : 자바의 정석 p.15 저자가 제시한 방향대로 진행
