@@ -37,8 +37,8 @@ Java Study
 |  3 | 챕터8. 예외처리                   | 23-09-17 | 23-09-23 |    :white_check_mark:    |:white_check_mark:|   :white_check_mark: |   :white_check_mark:  | :white_check_mark: |
 |  4 | 챕터9. java.lang 패키지와 유용한 클래스 | 23-10-01 | 23-10-07 | :white_check_mark:|:white_check_mark:|  :white_check_mark:   | :white_check_mark:    | :white_check_mark: |
 |  5 | 챕터10. 날짜와 시간 & 형식화          | 23-10-08 | 23-10-14 |                    |:white_check_mark:|     |  :white_check_mark:   | :white_check_mark: |
-|  6 | 챕터11. 컬렉션 프레임웍              | 23-10-15 | 23-10-21 |                    |     |     |  :white_check_mark:   |  |
-|  7 | 챕터12. 지네릭스, 열거형, 애너테이션      | 23-10-22 | 23-10-28 |                    |     |     |   :white_check_mark:  |  |
+|  6 | 챕터11. 컬렉션 프레임웍              | 23-10-15 | 23-10-21 |                    |     |     |  :white_check_mark:   | :white_check_mark: |
+|  7 | 챕터12. 지네릭스, 열거형, 애너테이션      | 23-10-22 | 23-10-28 |                    |     |     |   :white_check_mark:  | :white_check_mark: |
 |  8 | 챕터15. 입출력(자율)               |  |  |                    |     |     |     |  |
 
 ## :arrow_forward: 기타
